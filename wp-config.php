@@ -1,10 +1,4 @@
 <?php
-
-//Begin Really Simple SSL session cookie settings
-@ini_set('session.cookie_httponly', true);
-@ini_set('session.cookie_secure', true);
-@ini_set('session.use_only_cookies', true);
-//END Really Simple SSL cookie settings
 /**
  * Основные параметры WordPress.
  *
@@ -23,26 +17,19 @@
  *
  * @package WordPress
  */
-
 // ** Параметры базы данных: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 define( 'DB_NAME', '27school' );
-
 /** Имя пользователя базы данных */
 define( 'DB_USER', 'root' );
-
 /** Пароль к базе данных */
 define( 'DB_PASSWORD', '' );
-
 /** Имя сервера базы данных */
 define( 'DB_HOST', 'localhost' );
-
 /** Кодировка базы данных для создания таблиц. */
 define( 'DB_CHARSET', 'utf8mb4' );
-
 /** Схема сопоставления. Не меняйте, если не уверены. */
 define( 'DB_COLLATE', '' );
-
 /**#@+
  * Уникальные ключи и соли для аутентификации.
  *
@@ -62,9 +49,7 @@ define( 'AUTH_SALT',        'CoB>#e|sHJ/5Wd2+(/D2siSO OVw^=qJJ$W*y,+TW#Vg4_d)1m=
 define( 'SECURE_AUTH_SALT', 'H(QQ<~d7Q*975e~7vG^ZM^G#yo*Xvqaat]JoGln6E^s9mDqv-gBKNZyh?mqxX|< ' );
 define( 'LOGGED_IN_SALT',   'p=D?kw]cNEa ?prx![qv:WJ5X4}&dT5O)xPa`B;EB?uA%f8Uih*4D9IZDGwg@@B#' );
 define( 'NONCE_SALT',       'Wi5?p`)zBUH.VJ)1R@S%rve2N#<z|uc{uk|Y=]-<]`27)|6VR)3C>=$3{41T-G-k' );
-
 /**#@-*/
-
 /**
  * Префикс таблиц в базе данных WordPress.
  *
@@ -72,7 +57,6 @@ define( 'NONCE_SALT',       'Wi5?p`)zBUH.VJ)1R@S%rve2N#<z|uc{uk|Y=]-<]`27)|6VR)3
  * разные префиксы. Пожалуйста, указывайте только цифры, буквы и знак подчеркивания.
  */
 $table_prefix = 'wp_27school';
-
 /**
  * Для разработчиков: Режим отладки WordPress.
  *
@@ -85,17 +69,11 @@ $table_prefix = 'wp_27school';
  * @link https://ru.wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
-
 /* Произвольные значения добавляйте между этой строкой и надписью "дальше не редактируем". */
-
-
-
 /* Это всё, дальше не редактируем. Успехов! */
-
 /** Абсолютный путь к директории WordPress. */
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
-
 /** Инициализирует переменные WordPress и подключает файлы. */
 require_once ABSPATH . 'wp-settings.php';
